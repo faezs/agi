@@ -1,0 +1,9 @@
+name: zkp
+include:
+  src
+  ./
+depend:
+  standard-library
+  -- agda-unimath
+  hardware
+  -- agda-categories
