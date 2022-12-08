@@ -8,7 +8,7 @@
 
   outputs = { self, nixpkgs, agda-stdlib, agda-unimath, denotational-hardware }:
     let
-      definedSystems = [ "x86_64-linux" "aarch64-linux" ];
+      definedSystems = [ "x86_64-linux" "aarch64-linux" "aarch64-darwin" ];
       forAllSystems = nixpkgs.lib.genAttrs definedSystems;
       nixpkgsFor = forAllSystems (system: nixpkgs.legacyPackages.${system});
       agdaEnv = (system : (nixpkgsFor.${system}.agda.withPackages (ps: [
@@ -39,7 +39,7 @@
     {
       devShells = forAllSystems (system: {
         agdaEnv = agdaEnv system;
-        devShell.${system} = nixpkgsFor.${system}.mkShell {
+        devShell = nixpkgsFor.${system}.mkShell {
           packages = [ (agdaEnv system) ];
         };
       });
