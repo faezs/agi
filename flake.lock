@@ -1,0 +1,78 @@
+{
+  "nodes": {
+    "agda-stdlib": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1667823050,
+        "narHash": "sha256-f9KezTNq7Ah+JSaQXpxNossuoYxns6+URBNnw78D9zI=",
+        "owner": "agda",
+        "repo": "agda-stdlib",
+        "rev": "625a5775f0a2b4e56c9904278294e7e7f735b737",
+        "type": "github"
+      },
+      "original": {
+        "owner": "agda",
+        "repo": "agda-stdlib",
+        "type": "github"
+      }
+    },
+    "agda-unimath": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1670367524,
+        "narHash": "sha256-CVOrUb7jArV3aYcf353kI3zbD8Jjx1syR5eE4ieJBO4=",
+        "owner": "UniMath",
+        "repo": "agda-unimath",
+        "rev": "4ca4863a04d7a37e4db1183754a3197e9f126b4d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "UniMath",
+        "repo": "agda-unimath",
+        "type": "github"
+      }
+    },
+    "denotational-hardware": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1670256430,
+        "narHash": "sha256-qtU75/glZnQOacTXYXG36OGUrlA5FBHbcug0Qj5VVcg=",
+        "owner": "conal",
+        "repo": "denotational-hardware",
+        "rev": "3c71ff6c4bc565b124c2ddb7741a81f020211464",
+        "type": "github"
+      },
+      "original": {
+        "owner": "conal",
+        "repo": "denotational-hardware",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1670267727,
+        "narHash": "sha256-hUFAn5gjNHIBpLQT0CmqpuQjQwgWUm+D6aziGAYsDmw=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a5f661b80e4c163510a5013b585a040a5c7ef55e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "agda-stdlib": "agda-stdlib",
+        "agda-unimath": "agda-unimath",
+        "denotational-hardware": "denotational-hardware",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
